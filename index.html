@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles.css">
     <title>Portfólio - Daniel Dev</title>
 </head>
@@ -22,7 +23,9 @@
 
         <nav class="navbar">
 
-            <ul>
+            <button class="menu-hamburguer"></button>
+
+            <ul class="navbar-links">
                 <li><a href="#person">Home</a></li>
                 <li><a href="#about">Sobre</a></li>
                 <li><a href="#projects">Projetos</a></li>
@@ -48,7 +51,7 @@
 
                 <div class="stacks">
 
-                    <ul>
+                    <ul class="stacks">
                         <li>
 
                             <div data="HTML">
@@ -163,7 +166,7 @@
             <h4>Abaixo está o meu <p>Currículo</p> para download</h4>
 
             <div class="button-cta">
-                <button>Currículo</button>
+                <a href="public/document/">Currículo</button>
             </div>
 
         </div>
@@ -172,153 +175,118 @@
     <section id="projects">
 
         <div class="projects-title">
-            <h2>Projetos 🧑🏽‍💻 🧩</h2>
+            <h2>Projetos</h2>
         </div>
 
-        <div class="wrapper-projects">
+        <div class="container-projects">
 
-            <div class="card-project">
+            <div class="swiper mySwiper">
 
-                <div class="content-project">
+                <div class="swiper-wrapper">
 
-                    <div class="image-project">
-                        <a href="https://danielolivermoco.github.io/convert-money/" target="_blank">
-                            <img src="./img/moedas.jpg" alt="imagem-conversor-de-moedas">
-                        </a>
+                    <div class="swiper-slide card-project">
+
+                        <div class="image-project">
+                            <a href="https://danielolivermoco.github.io/convert-money/" target="_blank">
+                                <img src="./img/moedas.jpg" alt="imagem-conversor-de-moedas">
+                            </a>
+                        </div>
+
+                        <span>Conversor de Moedas</span>
+
+                        <p>Esse projeto simula um conversor de moedas intuitivo, permitindo a conversão instantânea
+                            entre
+                            Real, Dólar e Euro. Utilizando HTML, CSS e JavaScript, e consumindo a API da AwesomeApi, o
+                            projeto oferece uma experiência eficiente e confiável para usuários que precisam realizar
+                            transações internacionais.</p>
+
+                        <div class="cta-project">
+                            <a href="https://danielolivermoco.github.io/convert-money/" target="_blank">Site <i
+                                    class="bi bi-box-arrow-up-right"></i></a>
+                            <a href="https://github.com/danielolivermoco/convert-money" target="_blank">Código <i
+                                    class="bi bi-github"></i></a>
+                        </div>
+
                     </div>
 
-                    <span>Conversor de Moedas</span>
+                    <div class="swiper-slide card-project">
+
+                        <div class="image-project">
+                            <a href="https://danielolivermoco.github.io/landing-page-design-de-interiores/"
+                                target="_blank">
+                                <img src="./img/hrz-3.jpg" alt="imagem-fundo-design">
+                            </a>
+                        </div>
+
+                        <span>Landing Page Design de Interiores</span>
+                        <p>Esse projeto é uma Landing Page envolvente para um evento fictício de design de interiores,
+                            apresentando um formulário de inscrição integrado. Utilizei HTML e CSS para criar uma
+                            experiência visualmente atraente e funcional, facilitando o registro dos participantes
+                            interessados no evento.</p>
+
+                        <div class="cta-project">
+                            <a href="https://danielolivermoco.github.io/landing-page-design-de-interiores/"
+                                target="_blank">Site <i class="bi bi-box-arrow-up-right"></i></a>
+                            <a href="https://github.com/danielolivermoco/landing-page-design-de-interiores"
+                                target="_blank">Código <i class="bi bi-github"></i></a>
+                        </div>
+
+                    </div>
+
+                    <div class="swiper-slide card-project">
+
+                        <div class="image-project">
+                            <a href="https://danielolivermoco.github.io/site-pizzaria/" target="_blank">
+                                <img src="./img/fundopizza.jpg" alt="imagem-fundo-pizza">
+                            </a>
+                        </div>
+
+                        <span>Pizzaria</span>
+                        <p>Esse projeto simula um site fictício para uma pizzaria, apresentando um cardápio variado com
+                            diversos sabores de pizzas. Utilizei HTML, CSS e JavaScript para criar uma experiência
+                            interativa e atrativa aos clientes, permitindo que eles explorem os sabores disponíveis.</p>
+
+                        <div class="cta-project">
+                            <a href="https://danielolivermoco.github.io/site-pizzaria/" target="_blank">Site <i
+                                    class="bi bi-box-arrow-up-right"></i></a>
+                            <a href="https://github.com/danielolivermoco/site-pizzaria" target="_blank">Código <i
+                                    class="bi bi-github"></i></a>
+                        </div>
+
+                    </div>
                     
-                    <p>Esse projeto simula um conversor de moedas intuitivo, permitindo a conversão instantânea entre
-                        Real, Dólar e Euro. Utilizando HTML, CSS e JavaScript, e consumindo a API da AwesomeApi, o
-                        projeto oferece uma experiência eficiente e confiável para usuários que precisam realizar
-                        transações internacionais.</p>
+                    <div class="swiper-slide card-project">
 
-                    <div class="cta-project">
-                        <a href="https://danielolivermoco.github.io/convert-money/" target="_blank">Site <i
-                                class="bi bi-box-arrow-up-right"></i></a>
-                        <a href="https://github.com/danielolivermoco/convert-money" target="_blank">Código <i
-                                class="bi bi-github"></i></a>
+                        <div class="image-project">
+                            <a href="https://danielolivermoco.github.io/site-pizzaria/" target="_blank">
+                                <img src="./img/fundopizza.jpg" alt="imagem-fundo-pizza">
+                            </a>
+                        </div>
+
+                        <span>Pizzaria</span>
+                        <p>Esse projeto simula um site fictício para uma pizzaria, apresentando um cardápio variado com
+                            diversos sabores de pizzas. Utilizei HTML, CSS e JavaScript para criar uma experiência
+                            interativa e atrativa aos clientes, permitindo que eles explorem os sabores disponíveis.</p>
+
+                        <div class="cta-project">
+                            <a href="https://danielolivermoco.github.io/site-pizzaria/" target="_blank">Site <i
+                                    class="bi bi-box-arrow-up-right"></i></a>
+                            <a href="https://github.com/danielolivermoco/site-pizzaria" target="_blank">Código <i
+                                    class="bi bi-github"></i></a>
+                        </div>
+
                     </div>
+                    
                 </div>
 
-            </div>
-
-            <div class="card-project">
-
-                <div class="content-project">
-
-                    <div class="image-project">
-                        <a href="https://danielolivermoco.github.io/landing-page-design-de-interiores/" target="_blank">
-                            <img src="./img/hrz-3.jpg" alt="imagem-fundo-design">
-                        </a>
-                    </div>
-
-                    <span>Landing Page Design de Interiores</span>
-                    <p>Esse projeto é uma Landing Page envolvente para um evento fictício de design de interiores,
-                        apresentando um formulário de inscrição integrado. Utilizei HTML e CSS para criar uma
-                        experiência visualmente atraente e funcional, facilitando o registro dos participantes
-                        interessados no evento.</p>
-
-                    <div class="cta-project">
-                        <a href="https://danielolivermoco.github.io/landing-page-design-de-interiores/"
-                            target="_blank">Site <i class="bi bi-box-arrow-up-right"></i></a>
-                        <a href="https://github.com/danielolivermoco/landing-page-design-de-interiores"
-                            target="_blank">Código <i class="bi bi-github"></i></a>
-                    </div>
-                </div>
+                <div class="swiper-button-next"></div>
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-pagination"></div>
 
             </div>
-
-            <div class="card-project">
-
-                <div class="content-project">
-
-                    <div class="image-project">
-                        <a href="https://danielolivermoco.github.io/site-pizzaria/" target="_blank">
-                            <img src="./img/fundopizza.jpg" alt="imagem-fundo-pizza">
-                        </a>
-                    </div>
-
-                    <span>Pizzaria</span>
-                    <p>Esse projeto simula um site fictício para uma pizzaria, apresentando um cardápio variado com
-                        diversos sabores de pizzas. Utilizei HTML, CSS e JavaScript para criar uma experiência
-                        interativa e atrativa aos clientes, permitindo que eles explorem os sabores disponíveis.</p>
-
-                    <div class="cta-project">
-                        <a href="https://danielolivermoco.github.io/site-pizzaria/" target="_blank">Site <i
-                                class="bi bi-box-arrow-up-right"></i></a>
-                        <a href="https://github.com/danielolivermoco/site-pizzaria" target="_blank">Código <i
-                                class="bi bi-github"></i></a>
-                    </div>
-                </div>
-
-            </div>
-
-            <!-- <div class="card-project">
-
-                <div class="content-project">
-
-                    <div class="image-project">
-                        <a href="">
-                            <img src="./img/conversor.jpg" alt="imagem-conversor">
-                        </a>
-                    </div>
-
-                    <span>Conversor de Moedas</span>
-                    <p>Esse projeto simula um conversor de moedas</p>
-
-                    <div class="cta-project">
-                        <a href="">Código <i class="bi bi-github"></i></a>
-                        <a href="">Site <i class="bi bi-box-arrow-up-right"></i></a>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="card-project">
-
-                <div class="content-project">
-
-                    <div class="image-project">
-                        <a href="">
-                            <img src="./img/conversor.jpg" alt="imagem-conversor">
-                        </a>
-                    </div>
-
-                    <span>Conversor de Moedas</span>
-                    <p>Esse projeto simula um conversor de moedas</p>
-
-                    <div class="cta-project">
-                        <a href="">Código <i class="bi bi-github"></i></a>
-                        <a href="">Site <i class="bi bi-box-arrow-up-right"></i></a>
-                    </div>
-                </div>
-
-            </div>
-
-            <div class="card-project">
-
-                <div class="content-project">
-
-                    <div class="image-project">
-                        <a href="">
-                            <img src="./img/conversor.jpg" alt="imagem-conversor">
-                        </a>
-                    </div>
-
-                    <span>Conversor de Moedas</span>
-                    <p>Esse projeto simula um conversor de moedas</p>
-
-                    <div class="cta-project">
-                        <a href="">Código <i class="bi bi-github"></i></a>
-                        <a href="">Site <i class="bi bi-box-arrow-up-right"></i></a>
-                    </div>
-                </div> -->
 
         </div>
 
-        </div>
 
     </section>
 
@@ -368,6 +336,9 @@
         </div>
 
     </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    
 
     <script src="scripts.js"></script>
 </body>
